@@ -2,8 +2,45 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #292929;
     color: #F2F2EF;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .major {
     font-family: 'Signika', sans-serif;
+}
+
+#evenements {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F2F2EF;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.vignette {
+    height: 200px;
+    margin: 10px 10px 10px 10px;
+}
+
+#event_roll {
+    overflow-x: hidden;
+    width: 5000px;
+}
+
+#event_middle {
+    margin: auto;
+}
+
+.horizontal_line {
+    border-top: 5px solid #973835;
+    width: 500px;
+    display: inline-block;
+}
+
+#mot_evenement {
+    color: #973835;
+    margin: 0px 32px 0px 32px;
 }
