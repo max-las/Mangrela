@@ -44,3 +44,7 @@ body {
     color: #973835;
     margin: 0px 32px 0px 32px;
 }
+
+#presentation img{
+    max-width: 5%;
+}
