@@ -54,16 +54,23 @@ footer {
     background-color: #973835;
 }
 
-<<<<<<< HEAD
+
+#tete_page {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+}
+
 .logo {
     max-width: 5%;
-=======
+}
+
 #tete_page li {
     display: inline-block;
+    margin: 16px 16px 16px 16px;
 }
 
 #tete_page li a, #tete_page li a:visited {
     color: #F2F2EF;
     text-decoration: none;
->>>>>>> b6c786eef464b0fc380a086161a014004b34e116
 }
