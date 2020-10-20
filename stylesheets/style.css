@@ -56,3 +56,7 @@ body {
 .footer {
     background-color: #973835;
 }
+
+.logo {
+    max-width: 5%;
+}
