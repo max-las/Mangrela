@@ -42,18 +42,46 @@ body {
     margin: 0px 32px 0px 32px;
 }
 
-#presentation img{
-    max-width: 5%;
-}
-
 .cinelogo {
     max-width: 5%;
+    position: absolute;
+    top: 32px;
+    left: 32px;
 }
 
 footer {
     background-color: #973835;
 }
 
+
+#tete_page {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+}
+
 .logo {
     max-width: 5%;
+}
+
+#tete_page li {
+    display: inline-block;
+    margin: 16px 16px 16px 16px;
+}
+
+#tete_page li a, #tete_page li a:visited {
+    color: #F2F2EF;
+    text-decoration: none;
+}
+
+#programmation img{
+    max-width: 10%;
+}
+
+#img_cine {
+    height: 100vh;
+}
+
+#slides img{
+    max-width: 2%;
 }
