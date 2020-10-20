@@ -78,3 +78,7 @@ footer {
 #programmation img{
     max-width: 10%;
 }
+
+#img_cine {
+    min-height: 100%;
+}
