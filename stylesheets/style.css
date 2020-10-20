@@ -49,10 +49,14 @@ body {
     max-width: 5%;
 }
 
-.cinelogo{
+.cinelogo {
     max-width: 5%;
 }
 
 .footer {
     background-color: #973835;
+}
+
+#tete_page li{
+    display: inline-block;
 }
