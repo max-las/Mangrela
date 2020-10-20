@@ -54,10 +54,15 @@ footer {
     background-color: #973835;
 }
 
+
 #tete_page {
     position: absolute;
     top: 32px;
     right: 32px;
+}
+
+.logo {
+    max-width: 5%;
 }
 
 #tete_page li {
