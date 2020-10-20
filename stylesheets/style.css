@@ -15,9 +15,6 @@ body {
     background-color: #F2F2EF;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
-    width: 100%;
-    height: 100%;
-    position: absolute;
 }
 
 .vignette {
@@ -53,10 +50,15 @@ body {
     max-width: 5%;
 }
 
-.footer {
+footer {
     background-color: #973835;
 }
 
-#tete_page li{
+#tete_page li {
     display: inline-block;
+}
+
+#tete_page li a, #tete_page li a:visited {
+    color: #F2F2EF;
+    text-decoration: none;
 }
