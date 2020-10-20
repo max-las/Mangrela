@@ -54,12 +54,11 @@ body {
     margin: 0px 32px 0px 32px;
 }
 
-#presentation img{
-    max-width: 5%;
-}
-
 .cinelogo {
     max-width: 5%;
+    position: absolute;
+    top: 32px;
+    left: 32px;
 }
 
 footer {
@@ -89,4 +88,19 @@ footer {
 
 #programmation img{
     max-width: 10%;
+}
+
+#img_cine {
+    height: 100vh;
+}
+
+#slides img{
+    max-width: 2%;
+}
+
+h2 {
+    font-family: 'Signika', sans-serif;
+}
+p{
+    font-family: 'Montserrat', sans-serif; 
 }
