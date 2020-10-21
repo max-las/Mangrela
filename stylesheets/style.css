@@ -54,22 +54,25 @@ body {
     margin: 0px 32px 0px 32px;
 }
 
-.cinelogo {
-    max-width: 5%;
-    position: absolute;
-    top: 32px;
-    left: 32px;
-}
-
 footer {
     background-color: #973835;
 }
 
+.cinelogo {
+    max-width: 5%;
+    position: fixed;
+    top: 32px;
+    left: 32px;
+}
 
 #tete_page {
-    position: absolute;
+    position: fixed;
     top: 32px;
     right: 32px;
+}
+
+header *{
+    z-index: 1;
 }
 
 .logo {
