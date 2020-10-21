@@ -54,6 +54,37 @@ body {
     margin: 0px 32px 0px 32px;
 }
 
+#cercles {
+    background-color: #F2F2EF;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#texte_cercle {
+    color: #973835;
+}
+
+.cercle_cinéma {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #973835;
+    border-radius: 50%;
+}
+
+.cercle_scolaires {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #973835;
+    border-radius: 50%;
+}
+
+.cercle_formation {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #973835;
+    border-radius: 50%;
+}
+
 footer {
     background-color: #973835;
 }
@@ -89,11 +120,25 @@ header *{
     text-decoration: none;
 }
 
+#tete_page li a:hover{
+    border-bottom: 2px solid #F2F2EF;
+}
+
 #bas_page li {
     list-style-type: none;
 }
 
 #bas_page li a, #bas_page li a:visited {
+    color: #F2F2EF;
+    text-decoration: none;
+}
+
+#bas_page li a:hover{
+    border-left: 2px solid #F2F2EF;
+    padding-left: 3px;
+}
+
+#mentions, #mentions:visited {
     color: #F2F2EF;
     text-decoration: none;
 }
@@ -105,7 +150,7 @@ header *{
 #slides_elements{
     position: relative;
     bottom: 40px;
-    left: 40px;
+    left: 50px;
 }
 
 #slides_elements img{
@@ -144,9 +189,13 @@ h1{
     width: 150px;
 }
 
-.vertical_line {
+.vertical_line_bas {
     border-top: 5px solid #F2F2EF;
     width: 500px;
+    display: inline-block;
+    /*transform: rotate(90deg);
+    position: relative;
+    top: -100px;*/
 }
 
 .progra_texte {
