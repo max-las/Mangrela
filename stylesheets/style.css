@@ -212,6 +212,10 @@ h1{
     margin: 32px 32px 32px 32px;
 }
 
+#programmation p {
+    font-size: 12px;
+}
+
 .progra_horaires {
     margin-left: 32px;
 }
