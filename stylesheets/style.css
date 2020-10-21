@@ -6,10 +6,6 @@ body {
     padding: 0px 0px 0px 0px;
 }
 
-.major {
-    font-family: 'Signika', sans-serif;
-}
-
 #evenements {
     font-family: 'Montserrat', sans-serif;
     background-color: #F2F2EF;
@@ -163,6 +159,7 @@ header *{
     display: flex;
     justify-content: center;
     position: relative;
+    bottom: 40px;
 }
 
 #slides_elements *{
@@ -182,17 +179,6 @@ header *{
 
 #fleche_droite{
     transform: rotate(180deg);
-}
-
-h2 {
-    font-family: 'Signika', sans-serif;
-}
-p{
-    font-family: 'Montserrat', sans-serif; 
-}
-
-h1{
-    font-family: 'Signika', sans-serif; 
 }
 
 .progra_film {
