@@ -102,13 +102,13 @@ header *{
     height: 100vh;
 }
 
-#slides{
+#slides_elements{
     position: relative;
     bottom: 40px;
     left: 40px;
 }
 
-#slides img{
+#slides_elements img{
     max-width: 2%;
 }
 
