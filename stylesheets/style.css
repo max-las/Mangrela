@@ -159,11 +159,6 @@ header *{
     width: 83vh;
 }
 
-#slides{
-    display: flex;
-    align-items: baseline;
-}
-
 #slides_elements{
     position: relative;
     /*bottom: 40px;
@@ -187,6 +182,8 @@ header *{
 }
 
 #slides {
+    display: flex;
+    align-items: baseline;
     flex-basis: 0;
     margin-right: 64px;
 }
