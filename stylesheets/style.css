@@ -102,6 +102,13 @@ header *{
     text-decoration: none;
 }
 
+#bas_page li a:hover{
+    border-left: 2px solid #F2F2EF;
+    border-right: 2px solid #F2F2EF;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
 #mentions, #mentions:visited {
     color: #F2F2EF;
     text-decoration: none;
