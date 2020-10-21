@@ -127,15 +127,68 @@ h1{
     font-family: 'Signika', sans-serif; 
 }
 
-.progra_film > *{
-    display: inline-block;
+.progra_film {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #973835;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
-.progra_affiche img{
-    max-width: 10vw;
+.progra_affiche, .progra_affiche img{
+    height: 100%;
 }
+
+.progra_affiche {
+    width: 150px;
+}
+
 .vertical_line {
     border-top: 5px solid #F2F2EF;
     width: 500px;
-    display: inline-block;
+}
+
+.progra_texte {
+    max-width: 30vw;
+    margin: 0px 32px 0px 32px;
+}
+
+.progra_ligne_v {
+    border-left: 5px solid #F2F2EF;
+    height: 100%;
+}
+
+#programmation {
+    margin: 32px 32px 32px 32px;
+}
+
+.progra_horaires {
+    margin-left: 32px;
+}
+
+.progra_date a, .progra_date a:visited {
+    color: #F2F2EF;
+    text-decoration: none;
+}
+
+.progra_date {
+    display: flex;
+    justify-content: center;
+}
+
+.progra_date p{
+    margin: 0px 16px 0px 16px;
+}
+
+.ligne_horaire {
+    display: flex;
+}
+
+.progra_heure {
+    background-color: #F2F2EF;
+    color: #292929;
+    margin: 8px 8px 8px 8px;
+    padding: 16px 16px 16px 16px;
+    border-radius: 25px;
 }
