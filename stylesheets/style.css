@@ -79,10 +79,21 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 200px;
+    align-items: center;
 }
 
 #cercles img {
     max-width: 6vh;
+}
+
+.alignement {
+    margin: auto;
+}
+
+.horizontal_line_circles {
+    border-top: 5px solid #292929;
+    width: 150px;
+    display: inline-block;
 }
 
 footer {
