@@ -50,6 +50,7 @@ body {
     margin: 0px 32px 0px 32px;
 }
 
+
 #cercles {
     background-color: #F2F2EF;
     margin: 0px 0px 0px 0px;
@@ -74,7 +75,7 @@ body {
 .cercles_organisation {
     display: flex;
     justify-content: space-between;
-    padding: 200px;
+    height: 100vh;
     align-items: center;
 }
 
@@ -89,7 +90,6 @@ body {
 .horizontal_line_circles {
     border-top: 5px solid #292929;
     width: 150px;
-    display: inline-block;
 }
 
 footer {
