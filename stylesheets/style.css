@@ -89,6 +89,11 @@ header *{
     text-decoration: none;
 }
 
+#bas_page li a, #bas_page li a:visited {
+    color: #F2F2EF;
+    text-decoration: none;
+}
+
 #programmation img{
     max-width: 10%;
 }
