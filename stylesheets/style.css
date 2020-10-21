@@ -98,6 +98,11 @@ header *{
     text-decoration: none;
 }
 
+#mentions, #mentions:visited {
+    color: #F2F2EF;
+    text-decoration: none;
+}
+
 #img_cine {
     height: 100vh;
 }
