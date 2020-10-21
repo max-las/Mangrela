@@ -158,9 +158,9 @@ header *{
 #slides_elements_flex {
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 20px;
-    width: 83vh;
+    position: relative;
+    bottom: 40px;
+    /*width: 83vh;*/
 }
 
 #slides_elements *{
