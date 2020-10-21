@@ -159,16 +159,9 @@ header *{
     width: 83vh;
 }
 
-#slides{
-    display: flex;
-    align-items: baseline;
-}
-
 #slides_elements{
-    position: relative;
-    /*bottom: 40px;
-    left: 50px;*/
-    right: 475px;
+    position: absolute;
+    left: 50px;
     bottom: 20px;
 }
 
@@ -181,9 +174,9 @@ header *{
     max-width: 3vh;
 }
 
-#slides_point{
-    position: relative;
-    right: 254px;
+#slides {
+    flex-basis: 0;
+    margin-right: 64px;
 }
 
 #fleche_droite{
@@ -282,4 +275,9 @@ h1{
     margin: 8px 8px 8px 8px;
     padding: 16px 16px 16px 16px;
     border-radius: 25px;
+}
+
+#presentation {
+    display: flex;
+    align-items: center;
 }
