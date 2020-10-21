@@ -89,10 +89,13 @@ header *{
     text-decoration: none;
 }
 
+#bas_page li {
+    list-style-type: none;
+}
+
 #bas_page li a, #bas_page li a:visited {
     color: #F2F2EF;
     text-decoration: none;
-    list-style-type: none;
 }
 
 #programmation img{
