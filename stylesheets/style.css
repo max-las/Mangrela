@@ -210,6 +210,14 @@ h1{
     margin-bottom: 16px;
 }
 
+.progra_film_fin {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
 .progra_affiche, .progra_affiche img{
     height: 100%;
 }
