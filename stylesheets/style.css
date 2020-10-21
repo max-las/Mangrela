@@ -97,6 +97,12 @@ header *{
     height: 100vh;
 }
 
+#slides{
+    position: relative;
+    bottom: 40px;
+    left: 40px;
+}
+
 #slides img{
     max-width: 2%;
 }
