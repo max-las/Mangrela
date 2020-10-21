@@ -89,12 +89,31 @@ header *{
     text-decoration: none;
 }
 
+#bas_page li {
+    list-style-type: none;
+}
+
+#bas_page li a, #bas_page li a:visited {
+    color: #F2F2EF;
+    text-decoration: none;
+}
+
 #img_cine {
     height: 100vh;
 }
 
-#slides img{
+#slides_elements{
+    position: relative;
+    bottom: 40px;
+    left: 40px;
+}
+
+#slides_elements img{
     max-width: 2%;
+}
+
+#fleche_droite{
+    transform: rotate(180deg);
 }
 
 h2 {
@@ -114,4 +133,9 @@ h1{
 
 .progra_affiche img{
     max-width: 10vw;
+}
+.vertical_line {
+    border-top: 5px solid #F2F2EF;
+    width: 500px;
+    display: inline-block;
 }
