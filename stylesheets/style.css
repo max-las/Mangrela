@@ -126,3 +126,9 @@ p{
 h1{
     font-family: 'Signika', sans-serif; 
 }
+
+.vertical_line {
+    border-top: 5px solid #F2F2EF;
+    width: 500px;
+    display: inline-block;
+}
