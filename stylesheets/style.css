@@ -162,9 +162,7 @@ header *{
 #slides_elements_flex {
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 20px;
-    width: 83vh;
+    position: relative;
 }
 
 #slides_elements *{
