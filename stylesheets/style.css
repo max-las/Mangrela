@@ -64,28 +64,15 @@ body {
     color: #973835;
 }
 
-.cercle_cinéma {
+.cercle {
     width: 250px;
     height: 250px;
     border: 4px solid #973835;
     border-radius: 50%;
     text-align: center;
-}
-
-.cercle_scolaires {
-    width: 250px;
-    height: 250px;
-    border: 4px solid #973835;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.cercle_formation {
-    width: 250px;
-    height: 250px;
-    border: 4px solid #973835;
-    border-radius: 50%;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cercles_organisation {
