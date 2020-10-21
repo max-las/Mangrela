@@ -116,6 +116,10 @@ header *{
     max-width: 2%;
 }
 
+#fleche_droite{
+    transform: rotate(180deg);
+}
+
 h2 {
     font-family: 'Signika', sans-serif;
 }
