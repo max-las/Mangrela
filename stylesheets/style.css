@@ -268,3 +268,19 @@ header *{
     display: flex;
     align-items: center;
 }
+
+#presentation aside h1{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.titre{
+    text-align: center;
+}
+
+.titre p{
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
