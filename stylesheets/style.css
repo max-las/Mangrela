@@ -148,14 +148,31 @@ header *{
     width: 83vh;
 }
 
+#slides{
+    display: flex;
+    align-items: baseline;
+}
+
 #slides_elements{
     position: relative;
-    bottom: 40px;
-    left: 50px;
+    /*bottom: 40px;
+    left: 50px;*/
+    right: 475px;
+    bottom: 20px;
+}
+
+#slides_elements *{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #slides_elements img{
-    max-width: 2%;
+    max-width: 3vh;
+}
+
+#slides_point{
+    position: relative;
+    right: 254px;
 }
 
 #fleche_droite{
