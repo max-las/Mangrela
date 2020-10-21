@@ -120,6 +120,10 @@ header *{
     text-decoration: none;
 }
 
+#tete_page li a:hover{
+    border-bottom: 2px solid #F2F2EF;
+}
+
 #bas_page li {
     list-style-type: none;
 }
@@ -127,6 +131,11 @@ header *{
 #bas_page li a, #bas_page li a:visited {
     color: #F2F2EF;
     text-decoration: none;
+}
+
+#bas_page li a:hover{
+    border-left: 2px solid #F2F2EF;
+    padding-left: 3px;
 }
 
 #mentions, #mentions:visited {
