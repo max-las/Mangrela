@@ -54,6 +54,37 @@ body {
     margin: 0px 32px 0px 32px;
 }
 
+#cercles {
+    background-color: #F2F2EF;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#texte_cercle {
+    color: #973835;
+}
+
+.cercle_cinéma {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #973835;
+    border-radius: 50%;
+}
+
+.cercle_scolaires {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #973835;
+    border-radius: 50%;
+}
+
+.cercle_formation {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #973835;
+    border-radius: 50%;
+}
+
 footer {
     background-color: #973835;
 }
@@ -104,9 +135,7 @@ header *{
 
 #bas_page li a:hover{
     border-left: 2px solid #F2F2EF;
-    border-right: 2px solid #F2F2EF;
     padding-left: 3px;
-    padding-right: 3px;
 }
 
 #mentions, #mentions:visited {
