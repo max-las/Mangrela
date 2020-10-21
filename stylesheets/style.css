@@ -187,17 +187,6 @@ header *{
     transform: rotate(180deg);
 }
 
-h2 {
-    font-family: 'Signika', sans-serif;
-}
-p{
-    font-family: 'Montserrat', sans-serif; 
-}
-
-h1{
-    font-family: 'Signika', sans-serif; 
-}
-
 .progra_film {
     height: 200px;
     display: flex;
