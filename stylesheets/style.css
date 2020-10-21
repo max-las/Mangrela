@@ -79,10 +79,21 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 200px;
+    align-items: center;
 }
 
 #cercles img {
     max-width: 6vh;
+}
+
+.alignement {
+    margin: auto;
+}
+
+.horizontal_line_circles {
+    border-top: 5px solid #292929;
+    width: 150px;
+    display: inline-block;
 }
 
 footer {
@@ -148,11 +159,6 @@ header *{
     width: 83vh;
 }
 
-#slides{
-    display: flex;
-    align-items: baseline;
-}
-
 #slides_elements{
     position: relative;
     /*bottom: 40px;
@@ -173,6 +179,13 @@ header *{
 #slides_point{
     position: relative;
     right: 254px;
+}
+
+#slides {
+    display: flex;
+    align-items: baseline;
+    flex-basis: 0;
+    margin-right: 64px;
 }
 
 #fleche_droite{
@@ -263,4 +276,9 @@ h1{
     margin: 8px 8px 8px 8px;
     padding: 16px 16px 16px 16px;
     border-radius: 25px;
+}
+
+#presentation {
+    display: flex;
+    align-items: center;
 }
