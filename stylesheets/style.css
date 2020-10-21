@@ -242,6 +242,7 @@ h1{
 .progra_heure {
     background-color: #F2F2EF;
     color: #292929;
+    width : 3em; 
     margin: 8px 8px 8px 8px;
     padding: 16px 16px 16px 16px;
     border-radius: 25px;
