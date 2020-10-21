@@ -32,7 +32,7 @@ body {
 
 #event_roll {
     overflow-x: hidden;
-    width: 5000px;
+    white-space: nowrap;
 }
 
 #event_middle {
