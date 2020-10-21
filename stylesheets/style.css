@@ -79,10 +79,21 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 200px;
+    align-items: center;
 }
 
 #cercles img {
     max-width: 6vh;
+}
+
+.alignement {
+    margin: auto;
+}
+
+.horizontal_line_circles {
+    border-top: 5px solid #292929;
+    width: 150px;
+    display: inline-block;
 }
 
 footer {
@@ -148,14 +159,31 @@ header *{
     width: 83vh;
 }
 
+#slides{
+    display: flex;
+    align-items: baseline;
+}
+
 #slides_elements{
     position: relative;
-    bottom: 40px;
-    left: 50px;
+    /*bottom: 40px;
+    left: 50px;*/
+    right: 475px;
+    bottom: 20px;
+}
+
+#slides_elements *{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #slides_elements img{
-    max-width: 2%;
+    max-width: 3vh;
+}
+
+#slides_point{
+    position: relative;
+    right: 254px;
 }
 
 #slides {
@@ -247,6 +275,7 @@ h1{
 .progra_heure {
     background-color: #F2F2EF;
     color: #292929;
+    width : 3em; 
     margin: 8px 8px 8px 8px;
     padding: 16px 16px 16px 16px;
     border-radius: 25px;
