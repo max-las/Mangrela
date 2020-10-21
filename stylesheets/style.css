@@ -6,10 +6,6 @@ body {
     padding: 0px 0px 0px 0px;
 }
 
-.major {
-    font-family: 'Signika', sans-serif;
-}
-
 #evenements {
     font-family: 'Montserrat', sans-serif;
     background-color: #F2F2EF;
@@ -50,7 +46,6 @@ body {
 }
 
 #mot_evenement {
-    font-family: 'Signika', sans-serif;
     color: #973835;
     margin: 0px 32px 0px 32px;
 }
