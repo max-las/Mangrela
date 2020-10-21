@@ -6,10 +6,6 @@ body {
     padding: 0px 0px 0px 0px;
 }
 
-.major {
-    font-family: 'Signika', sans-serif;
-}
-
 #evenements {
     font-family: 'Montserrat', sans-serif;
     background-color: #F2F2EF;
@@ -36,7 +32,7 @@ body {
 
 #event_roll {
     overflow-x: hidden;
-    width: 5000px;
+    white-space: nowrap;
 }
 
 #event_middle {
@@ -79,10 +75,21 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 200px;
+    align-items: center;
 }
 
 #cercles img {
     max-width: 6vh;
+}
+
+.alignement {
+    margin: auto;
+}
+
+.horizontal_line_circles {
+    border-top: 5px solid #292929;
+    width: 150px;
+    display: inline-block;
 }
 
 footer {
@@ -144,33 +151,34 @@ header *{
 }
 
 #img_cine {
+    height: 100%;
+    width: 100%;
+}
+
+#slides_elements_flex {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 40px;
+}
+
+#slides_elements *{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#slides_elements img{
+    max-width: 3vh;
+}
+
+#slides {
+    margin-right: 64px;
     height: 100vh;
     width: 83vh;
 }
 
-#slides_elements{
-    position: relative;
-    bottom: 40px;
-    left: 50px;
-}
-
-#slides_elements img{
-    max-width: 2%;
-}
-
 #fleche_droite{
     transform: rotate(180deg);
-}
-
-h2 {
-    font-family: 'Signika', sans-serif;
-}
-p{
-    font-family: 'Montserrat', sans-serif; 
-}
-
-h1{
-    font-family: 'Signika', sans-serif; 
 }
 
 .progra_film {
@@ -178,6 +186,14 @@ h1{
     display: flex;
     align-items: center;
     border-bottom: 5px solid #973835;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.progra_film_fin {
+    height: 200px;
+    display: flex;
+    align-items: center;
     padding-bottom: 16px;
     margin-bottom: 16px;
 }
@@ -246,4 +262,9 @@ h1{
     margin: 8px 8px 8px 8px;
     padding: 16px 16px 16px 16px;
     border-radius: 25px;
+}
+
+#presentation {
+    display: flex;
+    align-items: center;
 }
