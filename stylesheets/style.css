@@ -89,10 +89,6 @@ header *{
     text-decoration: none;
 }
 
-#programmation img{
-    max-width: 10%;
-}
-
 #img_cine {
     height: 100vh;
 }
@@ -110,4 +106,12 @@ p{
 
 h1{
     font-family: 'Signika', sans-serif; 
+}
+
+.progra_film > *{
+    display: inline-block;
+}
+
+.progra_affiche img{
+    max-width: 10vw;
 }
