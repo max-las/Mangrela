@@ -96,6 +96,10 @@ footer {
     background-color: #973835;
 }
 
+footer ul{
+    margin-top: 0;
+}
+
 .cinelogo {
     max-width: 5%;
     position: fixed;
