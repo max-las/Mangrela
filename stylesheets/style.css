@@ -147,10 +147,6 @@ header *{
     z-index: 1;
 }
 
-.logo {
-    max-width: 5%;
-}
-
 #tete_page li, #tete_page_prog li {
     display: inline-block;
     margin: 16px 16px 16px 16px;
@@ -301,16 +297,6 @@ header *{
     width: 150px;
 }
 
-.vertical_line_bas {
-    border-top: 5px solid #F2F2EF;
-    width: 300px;
-    display: inline-block;
-    transform: rotate(90deg);
-    position: relative;
-    top: -200px;
-    margin-left: 250px;
-}
-
 .progra_texte {
     max-width: 50vw;
     margin: 0px 32px 0px 32px;
@@ -450,3 +436,70 @@ header *{
     color: #F2F2EF !important;
 }
 
+.vertical_line_bas {
+    border-top: 5px solid #F2F2EF;
+    width: 175px;
+    height: 0;
+    transform: rotate(90deg);
+    position: relative;
+    top: 75px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_icons{
+    text-align: right;
+    margin-right: 50px;
+}
+
+.icons{
+    max-width: 2vw;
+}
+
+.logo{
+    max-width: 5%;
+}
+
+.footer_top{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.footer_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.footer_left, .footer_left p, .footer_left a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_left p{
+    margin-left: 40px;
+}
+
+.footer_right{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_right p{
+    text-align: center;
+    margin: 0;
+}
+
+p.espace{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
