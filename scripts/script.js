@@ -128,10 +128,10 @@ $( document ).ready(function() {
     
     $(".vignette").hover(function(){
         $(this).children("img").css("filter", "brightness(100%)");
-        $(this).children("p").hide();
+        $(this).children("p").fadeOut();
     }, function(e){
         $(this).children("img").css("filter", "brightness(50%)");
-        $(this).children("p").show();
+        $(this).children("p").fadeIn();
     });
 });
 
