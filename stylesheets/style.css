@@ -324,7 +324,11 @@ header *{
 }
 
 #programmation p {
-    font-size: 12px;
+    font-size: 15px;
+}
+
+#programmation h2 {
+    font-size: 26px;
 }
 
 .progra_horaires {
@@ -433,6 +437,4 @@ header *{
 .cercle:hover h2 {  
     color: #F2F2EF !important;
 }
-
-
 
