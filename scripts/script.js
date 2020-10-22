@@ -126,7 +126,13 @@ $( document ).ready(function() {
         lastScrollOff = window.pageYOffset;
     });
     
-    
+    $(".vignette").hover(function(){
+        $(this).children("img").css("filter", "brightness(100%)");
+        $(this).children("p").hide();
+    }, function(e){
+        $(this).children("img").css("filter", "brightness(50%)");
+        $(this).children("p").show();
+    });
 });
 
 function setEventDecal(decal){
