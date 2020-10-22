@@ -279,6 +279,10 @@ header *{
     padding-top: 75px;
 }
 
+.progra_texte h2 {
+    font-size: 30;
+}
+
 .progra_film_fin {
     height: 200px;
     display: flex;
