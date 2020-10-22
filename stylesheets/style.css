@@ -137,7 +137,11 @@ header *{
 
 /* DEBUT ANIMATION SURLIGNEMENT */
 
-.menu a:after{
+.menu{
+    position: relative;
+}
+
+.anim:after{
     content: '';
     position: absolute;
     left: 0;
@@ -148,8 +152,8 @@ header *{
     transition: width 500ms ease;
 }
 
-.menu a:hover:after{
-    width: 10%;
+.anim:hover:after{
+    width: 100%;
 }
 
 /* FIN ANIMATION SURLIGNEMENT */
