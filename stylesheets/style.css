@@ -317,6 +317,10 @@ header *{
 
 }
 
+.container-affiche p {
+    font-size : 18px
+}
+
 .liste-affiche{
     display: flex;
     width: 100vw;
@@ -324,8 +328,8 @@ header *{
 }
 
 .container-image{
-    height: 424px;
-    width: 352px;
+    height: 440px;
+    width: 360px;
     display: block;
 }
 
