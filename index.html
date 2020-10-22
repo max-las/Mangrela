@@ -6,7 +6,6 @@
     <title>Cinéma Le Festival</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='stylesheets/style.css' />
-    <link rel='stylesheet' type='text/css' media='screen' href='stylesheets/button.css' />
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap" rel="stylesheet">
     <!-- Signika Semibold -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -40,12 +39,10 @@
             <div id="slides_elements_flex">
                 <div id="slides_elements">
                     <a href=""><img src="images/slides/fleche_blanche.png" alt="Image précédente" /></a>
-                    <a class="puce_clic" href=""><img src="images/slides/puce_pleine_blanche.png"
-                            alt="Image numéro 1" /></a>
-                    <a class="puce_clic" href=""><img src="images/slides/puce_blanche.png" alt="Image numéro 2" /></a>
-                    <a class="puce_clic" href=""><img src="images/slides/puce_blanche.png" alt="Image numéro 3" /></a>
-                    <a href=""><img src="images/slides/fleche_blanche.png" alt="Image suivante"
-                            id="fleche_droite" /></a>
+                    <a class="puce_clic" href=""><img src="images/slides/puce_pleine_blanche.png" alt="Image numéro 1" id="puce_1" /></a>
+                    <a class="puce_clic" href=""><img src="images/slides/puce_blanche.png" alt="Image numéro 2" id="puce_2" /></a>
+                    <a class="puce_clic" href=""><img src="images/slides/puce_blanche.png" alt="Image numéro 3" id="puce_3" /></a>
+                    <a href=""><img src="images/slides/fleche_blanche.png" alt="Image suivante" id="fleche_droite" /></a>
                 </div>
             </div>
         </article>
@@ -63,6 +60,12 @@
                 qu’aux films à effets spéciaux. </p>
             <p>Séances à partir de 5€.</p>
         </aside>
+        <div class="scroll_nav">
+            <div id="souris">
+                 <img src="images/mouse_white.png" alt="souris navigation" class="souris">
+            </div>
+            <p>Scrollez pour naviguer</p>
+        </div>
     </section>
 
     <section id="evenements">
@@ -124,7 +127,8 @@
     <section id="affiches">
         <div class="liste-affiche">
             <div class="container-affiche">
-                <a class="container-image" href=""><img src="images/affiches/ame-et-yuki.jpg" alt="affiche Les enfants loups" /></a>
+                <a class="container-image" href=""><img src="images/affiches/ame-et-yuki.jpg"
+                        alt="affiche Les enfants loups" /></a>
                 <p>Les Enfants Loups</p>
             </div>
             <div class="container-affiche">
@@ -153,7 +157,7 @@
             <span class="vertical_line"></span>
             <span class="mot_affiche">À L' AFFICHE</span>
             <span class="vertical_line"></span>
-            
+
         </div>
     </section>
 
@@ -193,10 +197,10 @@
         <div class="footer_icons">
             <a href="https://www.facebook.com/cinemalefestival" target="_blank"><img src="images/logo-fb-blanc.png"
                     class="icons" alt="Facebook"></a>
-            <a href="https://www.instagram.com/cinemalefestival/" target="_blank"><img src="images/logo-instagram-blanc.png"
-                    class="icons" alt="Instagram"></a>
+            <a href="https://www.instagram.com/cinemalefestival/" target="_blank"><img
+                    src="images/logo-instagram-blanc.png" class="icons" alt="Instagram"></a>
         </div>
-        
+
         <div class="footer_top">
             <div class="footer_left">
                 <ul id="bas_page">
@@ -205,7 +209,7 @@
                     <li class="submenu"><a class="anim_footer" href=""> SCOLAIRES </a></li> <br>
                     <li class="submenu"><a class="anim_footer" href=""> FORMATION </a></li> <br>
                 </ul>
-                    
+
             </div>
 
             <span class="vertical_line_bas"></span>
@@ -218,11 +222,10 @@
         </div>
 
         <div class="footer_bottom">
-            <p>Created by <a href=""><img src="images/Mangrela.jpg" class="logo" alt="logo Mangrela" /></a></p>
+            <p>Created by <a href="mangrela.html" target="_blank"><img src="images/Mangrela.jpg" class="logo" alt="logo Mangrela" /></a></p>
             <a id="mentions" href="">Mentions Légales</a>
         </div>
     </footer>
 </body>
 
 </html>
-

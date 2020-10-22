@@ -1,3 +1,8 @@
+html,body
+{
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #292929;
@@ -33,7 +38,6 @@ body {
 }
 
 #event_roll {
-    overflow-x: hidden;
     white-space: nowrap;
     width: 100vw;
 }
@@ -453,6 +457,14 @@ header *{
     color: #F2F2EF;
 }
 
+.container-image {
+       display: block;
+}
+
+.container-image:hover > .video-test {
+        display: block;
+}
+
 .vertical_line_bas {
     border-top: 5px solid #F2F2EF;
     width: 175px;
@@ -521,8 +533,32 @@ p.espace{
     font-weight: bold;
 }
 
+.scroll_nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    bottom: 32px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+}
+
+.scroll_nav img {
+    width: 100%;
+}
+
+#souris {
+    width: 45px;
+}
+
 .cercle div p {
     width: 90%;
     margin: auto;
     padding-bottom: 16px;
+}
+
+#mangrela_img{
+    width: 100vw;
+    height: 100vh;
 }
