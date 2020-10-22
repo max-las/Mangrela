@@ -578,3 +578,8 @@ p.espace{
     margin: auto;
     padding-bottom: 16px;
 }
+
+#mangrela_img{
+    width: 100vw;
+    height: 100vh;
+}
