@@ -8,46 +8,7 @@ $( document ).ready(function() {
         e.preventDefault();
         $(".puce_clic img").attr("src", "images/slides/puce_blanche.png");
         $(e.target).attr("src", "images/slides/puce_pleine_blanche.png");
-        switch($(e.target).attr("id")){
-            case "puce_1":
-                $("#slideshow").css("left", "0vw");
-                $(".titre h1").text("CINÉMA LE FESTIVAL");
-                $(".titre p").text("un cinéma pour tous")
-                $("#aside_text").html(`Le seul cinéma dont la programmation est<br/>
-                exclusivement consacrée au cinéma d'animation ainsi<br/>
-                qu'aux films à effets spéciaux.`);
-                $("#aside_subtext").text("Séances à partir de 5€.");
-                puce = "1";
-            break;
-            case "puce_2":
-                $("#slideshow").css("left", "-40vw");
-                $(".titre h1").text("NOTRE COUP DE COEUR");
-                $(".titre p").text("du 4 au 15 novembre")
-                $("#aside_text").html(`Venez découvrir notre coup de coeur du moment: Mon Voisin Totoro.<br />
-                Un classique de Hayao Miyazaki pour toute la famille.`);
-                $("#aside_subtext").text("");
-                puce = "2";
-            break;
-            case "puce_3":
-                $("#slideshow").css("left", "-80vw");
-                $(".titre h1").html("UNE RÉDUCTION<br/>HALLOWEENESQUE");
-                $(".titre p").html("du 17 octobre au 2 novembre<br/>À partir de 16h")
-                $("#aside_text").html(`Pour des vacances frissonantes venez profiter de notre offre spéciale:<br/>
-                à partir de 16h toutes nos séances sont à 4€ !`);
-                $("#aside_subtext").text("");
-                puce = "3";
-            break;
-            default:
-                $("#img_cine").attr("src", "images/cinema.jpg");
-                $(".titre h1").text("CINÉMA LE FESTIVAL");
-                $(".titre p").text("un cinéma pour tous")
-                $("#aside_text").html(`Le seul cinéma dont la programmation est<br/>
-                exclusivement consacrée au cinéma d'animation ainsi<br/>
-                qu'aux films à effets spéciaux.`);
-                $("#aside_subtext").text("Séances à partir de 5€.");
-                puce = "1";
-            break;
-        }
+        slideUpdate($(e.target).attr("id").slice(-1));
     });
 
     $("#fleche_gauche").click(function(e){
@@ -65,8 +26,9 @@ $( document ).ready(function() {
         }
         $(".puce_clic img").attr("src", "images/slides/puce_blanche.png");
         $("#puce_" + puce).attr("src", "images/slides/puce_pleine_blanche.png");
-        fleches(puce);
+        slideUpdate(puce);
     });
+
     $("#fleche_droite").click(function(e){
         e.preventDefault();
         switch(puce){
@@ -82,51 +44,12 @@ $( document ).ready(function() {
         }
         $(".puce_clic img").attr("src", "images/slides/puce_blanche.png");
         $("#puce_" + puce).attr("src", "images/slides/puce_pleine_blanche.png");
-        fleches(puce);
+        slideUpdate(puce);
     });
 
-    function fleches(puce){
-        switch(puce){
-            case "1":
-                $("#img_cine").attr("src", "images/cinema.jpg");
-                $(".titre h1").text("CINÉMA LE FESTIVAL");
-                $(".titre p").text("un cinéma pour tous")
-                $("#aside_text").html(`Le seul cinéma dont la programmation est<br/>
-                exclusivement consacrée au cinéma d'animation ainsi<br/>
-                qu'aux films à effets spéciaux.`);
-                $("#aside_subtext").text("Séances à partir de 5€.");
-                puce = "1";
-            break;
-            case "2":
-                $("#img_cine").attr("src", "images/coupdecoeur.jpg");
-                $(".titre h1").text("NOTRE COUP DE COEUR");
-                $(".titre p").text("du 4 au 15 novembre")
-                $("#aside_text").html(`Venez découvrir notre coup de coeur du moment: Mon Voisin Totoro.<br />
-                Un classique de Hayao Miyazaki pour toute la famille.`);
-                $("#aside_subtext").text("");
-                puce = "2";
-            break;
-            case "3":
-                $("#img_cine").attr("src", "images/news.jpg");
-                $(".titre h1").html("UNE RÉDUCTION<br/>HALLOWEENESQUE");
-                $(".titre p").html("du 17 octobre au 2 novembre<br/>À partir de 16h")
-                $("#aside_text").html(`Pour des vacances frissonantes venez profiter de notre offre spéciale:<br/>
-                à partir de 16h toutes nos séances sont à 4€ !`);
-                $("#aside_subtext").text("");
-                puce = "3";
-            break;
-            default:
-                $("#img_cine").attr("src", "images/cinema.jpg");
-                $(".titre h1").text("CINÉMA LE FESTIVAL");
-                $(".titre p").text("un cinéma pour tous")
-                $("#aside_text").html(`Le seul cinéma dont la programmation est<br/>
-                exclusivement consacrée au cinéma d'animation ainsi<br/>
-                qu'aux films à effets spéciaux.`);
-                $("#aside_subtext").text("Séances à partir de 5€.");
-                puce = "1";
-            break;
-        }
-    }
+    setInterval(function(){
+        $("#fleche_droite").click();
+    }, 5000);
 
     blackSetNav = false;
     blackSetLogo = true;
@@ -228,6 +151,49 @@ function superpose(el1, el2) {
     rect1 = el1.getBoundingClientRect();
     rect2 = el2.getBoundingClientRect();
     return rect2.top <= rect1.top && rect2.bottom >= rect1.bottom;
+}
+
+function slideUpdate(puce){
+    switch(puce){
+        case "1":
+            $("#slideshow").css("left", "0vw");
+            $(".titre h1").text("CINÉMA LE FESTIVAL");
+            $(".titre p").text("un cinéma pour tous")
+            $("#aside_text").html(`Le seul cinéma dont la programmation est<br/>
+            exclusivement consacrée au cinéma d'animation ainsi<br/>
+            qu'aux films à effets spéciaux.`);
+            $("#aside_subtext").text("Séances à partir de 5€.");
+            puce = "1";
+        break;
+        case "2":
+            $("#slideshow").css("left", "-40vw");
+            $(".titre h1").text("NOTRE COUP DE COEUR");
+            $(".titre p").text("du 4 au 15 novembre")
+            $("#aside_text").html(`Venez découvrir notre coup de coeur du moment: Mon Voisin Totoro.<br />
+            Un classique de Hayao Miyazaki pour toute la famille.`);
+            $("#aside_subtext").text("");
+            puce = "2";
+        break;
+        case "3":
+            $("#slideshow").css("left", "-80vw");
+            $(".titre h1").html("UNE RÉDUCTION<br/>HALLOWEENESQUE");
+            $(".titre p").html("du 17 octobre au 2 novembre<br/>À partir de 16h")
+            $("#aside_text").html(`Pour des vacances frissonantes venez profiter de notre offre spéciale:<br/>
+            à partir de 16h toutes nos séances sont à 4€ !`);
+            $("#aside_subtext").text("");
+            puce = "3";
+        break;
+        default:
+            $("#slideshow").css("left", "0vw");
+            $(".titre h1").text("CINÉMA LE FESTIVAL");
+            $(".titre p").text("un cinéma pour tous")
+            $("#aside_text").html(`Le seul cinéma dont la programmation est<br/>
+            exclusivement consacrée au cinéma d'animation ainsi<br/>
+            qu'aux films à effets spéciaux.`);
+            $("#aside_subtext").text("Séances à partir de 5€.");
+            puce = "1";
+        break;
+    }
 }
 
 /*var figure = $(".video").hover( hoverVideo, hideVideo );
