@@ -381,8 +381,12 @@ header *{
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin-top:15px;
+    margin-top:30px;
 
+}
+
+.container-affiche p {
+    font-size : 25px;
 }
 
 .liste-affiche{
@@ -392,8 +396,8 @@ header *{
 }
 
 .container-image{
-    height: 424px;
-    width: 352px;
+    height: 440px;
+    width: 360px;
     display: block;
 }
 
@@ -401,4 +405,20 @@ header *{
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+#affiche_line {
+    display: flex;
+    align-items: center;
+}
+
+.vertical_line{
+    border-top: 5px solid #F2F2EF;
+    flex-grow: 1;
+}
+
+.mot_affiche {
+    color:#F2F2EF;
+    margin: 0px 32px 0px 32px;
+    font-size: 25px;
 }
