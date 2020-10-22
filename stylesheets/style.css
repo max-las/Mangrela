@@ -423,7 +423,6 @@ header *{
 .vertical_line{
     border-top: 5px solid #F2F2EF;
     flex-grow: 1;
-    transform: rotate(90deg); 
     
 }
 
@@ -431,8 +430,6 @@ header *{
     color:#F2F2EF;
     margin: 0px 32px 0px 32px;
     font-size: 25px;
-    transform: rotate(90deg);
-    
     position: relative;
     bottom: 10px;
     transform: rotate(180deg)
