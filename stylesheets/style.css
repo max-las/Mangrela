@@ -137,7 +137,11 @@ header *{
 
 /* DEBUT ANIMATION SURLIGNEMENT */
 
-.menu a:after{
+.menu{
+    position: relative;
+}
+
+.anim:after{
     content: '';
     position: absolute;
     left: 0;
@@ -148,8 +152,8 @@ header *{
     transition: width 500ms ease;
 }
 
-.menu a:hover:after{
-    width: 10%;
+.anim:hover:after{
+    width: 100%;
 }
 
 /* FIN ANIMATION SURLIGNEMENT */
@@ -231,11 +235,12 @@ header *{
 
 .vertical_line_bas {
     border-top: 5px solid #F2F2EF;
-    width: 500px;
+    width: 300px;
     display: inline-block;
-    /*transform: rotate(90deg);
+    transform: rotate(90deg);
     position: relative;
-    top: -100px;*/
+    top: -200px;
+    margin-left: 250px;
 }
 
 .progra_texte {
