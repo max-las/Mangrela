@@ -209,7 +209,13 @@ $( document ).ready(function() {
         lastScrollOff = window.pageYOffset;
     });
     
-    
+    $(".vignette").hover(function(){
+        $(this).children("img").css("filter", "brightness(100%)");
+        $(this).children("p").fadeOut();
+    }, function(e){
+        $(this).children("img").css("filter", "brightness(50%)");
+        $(this).children("p").fadeIn();
+    });
 });
 
 function setEventDecal(decal){
