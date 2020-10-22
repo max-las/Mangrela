@@ -64,6 +64,7 @@ body {
     margin: 0px 32px 0px 32px;
 }
 
+
 #cercles {
     background-color: #F2F2EF;
     margin: 0px 0px 0px 0px;
@@ -88,7 +89,7 @@ body {
 .cercles_organisation {
     display: flex;
     justify-content: space-between;
-    padding: 200px;
+    height: 100vh;
     align-items: center;
 }
 
@@ -102,12 +103,16 @@ body {
 
 .horizontal_line_circles {
     border-top: 5px solid #292929;
-    width: 150px;
-    display: inline-block;
+    width: 200px;
 }
 
 footer {
     background-color: #973835;
+    padding-top: 20px;
+}
+
+footer ul{
+    margin-top: 0;
 }
 
 .cinelogo {
@@ -141,9 +146,32 @@ header *{
     text-decoration: none;
 }
 
-#tete_page li a:hover{
+/*#tete_page li a:hover{
     border-bottom: 2px solid #F2F2EF;
+}*/
+
+/* DEBUT ANIMATION SURLIGNEMENT */
+
+.menu{
+    position: relative;
 }
+
+.anim:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #F2F2EF;
+    transition: width 500ms ease;
+}
+
+.anim:hover:after{
+    width: 100%;
+}
+
+/* FIN ANIMATION SURLIGNEMENT */
 
 #bas_page li {
     list-style-type: none;
@@ -154,10 +182,35 @@ header *{
     text-decoration: none;
 }
 
-#bas_page li a:hover{
+/*#bas_page li a:hover{
     border-left: 2px solid #F2F2EF;
     padding-left: 3px;
+}*/
+
+/* DEBUT ANIMATION SURLIGNEMENT FOOTER*/
+
+.submenu{
+    position: relative;
 }
+
+.anim_footer:after{
+    content: '';
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0px;
+    background: #F2F2EF;
+    transition: width 500ms ease;
+    transition: height 500ms ease;
+}
+
+.anim_footer:hover:after{
+    width: 2px;
+    height: 100%;
+}
+
+/* FIN ANIMATION SURLIGNEMENT FOOTER*/
 
 #mentions, #mentions:visited {
     color: #F2F2EF;
@@ -222,11 +275,12 @@ header *{
 
 .vertical_line_bas {
     border-top: 5px solid #F2F2EF;
-    width: 500px;
+    width: 300px;
     display: inline-block;
-    /*transform: rotate(90deg);
+    transform: rotate(90deg);
     position: relative;
-    top: -100px;*/
+    top: -200px;
+    margin-left: 250px;
 }
 
 .progra_texte {
@@ -281,4 +335,47 @@ header *{
 #presentation {
     display: flex;
     align-items: center;
+}
+
+#presentation aside h1{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.titre{
+    text-align: center;
+}
+
+.titre p{
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+.container-affiche{
+    width: 50vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:15px;
+
+}
+
+.liste-affiche{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+.container-image{
+    height: 424px;
+    width: 352px;
+    display: block;
+}
+
+.container-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
