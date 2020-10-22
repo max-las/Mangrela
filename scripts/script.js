@@ -23,6 +23,8 @@ $( document ).ready(function() {
     });
 
 
+    blackSetNav = false;
+    blackSetLogo = true;
     $("#event_roll").css({
         "position": "absolute",
         "top": "50vh",
@@ -36,6 +38,36 @@ $( document ).ready(function() {
     scrollCran = 50;
     lastScrollOff = 0;
     $(window).scroll(function(){
+        console.log(window.pageYOffset);
+        if(window.pageYOffset > 900 && window.pageYOffset < 3800){
+            if(!blackSetNav){
+                $("style").text(`
+                    tete_page li a, #tete_page li a:visited, #tete_page_prog li a, #tete_page_prog li a:visited {
+                        color: #292929;
+                    }
+                    .anim:after {
+                        background: #292929;
+                    }
+                `);
+                blackSetNav = true;
+            }
+        }else{
+            if(blackSetNav){
+                $("style").text("");
+                blackSetNav = false;
+            }
+        }
+        if(window.pageYOffset > 3800){
+            if(blackSetLogo){
+                $(".cinelogo").attr("src","images/cinélogo_blanc.png")
+                blackSetLogo = false;
+            }
+        }else{
+            if(!blackSetLogo){
+                $(".cinelogo").attr("src","images/cinélogo_noir.png")
+                blackSetLogo = true;
+            }
+        }
         if(window.pageYOffset > eventScrollMark && reachedEvents=="no"){
             reachedEvents = "yes";
             $("#event_roll").css("position","fixed");
