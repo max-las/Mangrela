@@ -434,4 +434,33 @@ header *{
     margin: 0px 32px 0px 32px;
     font-size: 25px;
 }
+/*
+#videosList {
+    max-width: 600px; 
+    overflow: hidden;
+   }
+   
+   .video {
+     height: 330px;
+     width: 600px;
+   }*/
 
+   .video {
+    height: 330px;
+    width: 600px;
+   }
+
+   .video-test {
+       background-color: red;
+       height: 100%;
+       width: 100%;
+       display: none;
+   }
+
+   .container-image {
+       display: block;
+   }
+
+   .container-image:hover > .video-test {
+        display: block;
+   }
