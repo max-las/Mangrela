@@ -1,6 +1,6 @@
 html,body
 {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 body {
@@ -40,6 +40,7 @@ body {
 #event_roll {
     white-space: nowrap;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 #event_middle {
@@ -453,8 +454,42 @@ header *{
     transform: rotate(90deg);
     position: relative;
     bottom: 800px;
-    
+
     display: none;
+}
+
+#affiches {
+    position: relative;
+}
+
+.centered_line {
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    left: 50%;
+    width: 5px;
+    background: #F2F2EF;
+} 
+
+.centered_label {
+    position: sticky;
+    display: block;
+    top: 40vh;
+    transform: rotate(-90deg);
+    height: 250px;
+    width: 185px;
+}
+
+
+
+.centered_label span{
+    color:#F2F2EF;
+    font-size: 25px;
+    display: block;
+    background: #292929;
+    padding: 20px;
+    width: 155px;
+    white-space: nowrap;
 }
 
 .vertical_line{
