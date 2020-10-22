@@ -9,8 +9,10 @@ body {
 #evenements {
     font-family: 'Montserrat', sans-serif;
     background-color: #F2F2EF;
+    height: 300vh;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    position: relative;
 }
 
 .vignette img{
@@ -62,6 +64,7 @@ body {
 #mot_evenement {
     color: #973835;
     margin: 0px 32px 0px 32px;
+    font-size: 25px;
 }
 
 
@@ -73,9 +76,11 @@ body {
 
 #texte_cercle {
     color: #973835;
+    transition: 0.6s ease;
 }
 
 .cercle {
+    transition: 0.6s ease;
     width: 250px;
     height: 250px;
     border: 4px solid #973835;
@@ -297,9 +302,10 @@ header *{
 }
 
 .progra_texte {
-    max-width: 30vw;
+    max-width: 50vw;
     margin: 0px 32px 0px 32px;
 }
+
 
 .progra_ligne_v {
     border-left: 5px solid #F2F2EF;
@@ -311,7 +317,11 @@ header *{
 }
 
 #programmation p {
-    font-size: 12px;
+    font-size: 15px;
+}
+
+#programmation h2 {
+    font-size: 26px;
 }
 
 .progra_horaires {
@@ -348,6 +358,12 @@ header *{
 #presentation {
     display: flex;
     align-items: center;
+}
+
+#presentation aside {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
 }
 
 #presentation aside h1{
@@ -413,6 +429,14 @@ header *{
     font-size: 25px;
 }
 
+.cercle:hover {
+    background-color: #973835;
+}
+
+.cercle:hover h2 {  
+    color: #F2F2EF !important;
+}
+
 .vertical_line_bas {
     border-top: 5px solid #F2F2EF;
     width: 100px;
@@ -459,3 +483,5 @@ footer{
 .footer_right p{
     text-align: center;
 }
+
+
