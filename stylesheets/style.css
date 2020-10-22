@@ -455,6 +455,36 @@ header *{
 .cercle:hover .fa-plus {
     color: #F2F2EF;
 }
+/*
+#videosList {
+    max-width: 600px; 
+    overflow: hidden;
+   }
+   
+   .video {
+     height: 330px;
+     width: 600px;
+   }*/
+
+   .video {
+    height: 330px;
+    width: 600px;
+   }
+
+   .video-test {
+       background-color: red;
+       height: 100%;
+       width: 100%;
+       display: none;
+   }
+
+   .container-image {
+       display: block;
+   }
+
+   .container-image:hover > .video-test {
+        display: block;
+   }
 
 .vertical_line_bas {
     border-top: 5px solid #F2F2EF;
@@ -522,6 +552,25 @@ footer{
 p.espace{
     margin-bottom: 10px;
     font-weight: bold;
+}
+
+.scroll_nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    bottom: 32px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+}
+
+.scroll_nav img {
+    width: 100%;
+}
+
+#souris {
+    width: 45px;
 }
 
 .cercle div p {
