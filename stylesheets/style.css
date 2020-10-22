@@ -288,3 +288,11 @@ header *{
     margin-bottom: 50px;
     font-size: 18px;
 }
+
+.affiche_film {
+    width: 150px;
+}
+
+.affiche_film, .affiche_film img {
+    height: 100%;
+}
