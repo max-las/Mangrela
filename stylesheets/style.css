@@ -455,36 +455,14 @@ header *{
 .cercle:hover .fa-plus {
     color: #F2F2EF;
 }
-/*
-#videosList {
-    max-width: 600px; 
-    overflow: hidden;
-   }
-   
-   .video {
-     height: 330px;
-     width: 600px;
-   }*/
 
-   .video {
-    height: 330px;
-    width: 600px;
-   }
-
-   .video-test {
-       background-color: red;
-       height: 100%;
-       width: 100%;
-       display: none;
-   }
-
-   .container-image {
+.container-image {
        display: block;
-   }
+}
 
-   .container-image:hover > .video-test {
+.container-image:hover > .video-test {
         display: block;
-   }
+}
 
 .vertical_line_bas {
     border-top: 5px solid #F2F2EF;
