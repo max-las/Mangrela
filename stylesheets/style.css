@@ -1,3 +1,8 @@
+html,body
+{
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #292929;
@@ -33,7 +38,6 @@ body {
 }
 
 #event_roll {
-    overflow-x: hidden;
     white-space: nowrap;
     width: 100vw;
 }
