@@ -465,10 +465,11 @@ header *{
 .centered_line {
     position: absolute;
     top: 30px;
-    bottom: 30px;
+    bottom: 90px;
     left: 50%;
     width: 5px;
     background: #F2F2EF;
+    transform: translateX(-50%);
 } 
 
 .centered_label {
