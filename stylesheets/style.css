@@ -122,8 +122,18 @@ footer ul{
     left: 32px;
 }
 
+.logoprog{
+    position: absolute;
+}
+
 #tete_page {
     position: fixed;
+    top: 32px;
+    right: 32px;
+}
+
+#tete_page_prog {
+    position: absolute;
     top: 32px;
     right: 32px;
 }
@@ -136,12 +146,12 @@ header *{
     max-width: 5%;
 }
 
-#tete_page li {
+#tete_page li, #tete_page_prog li {
     display: inline-block;
     margin: 16px 16px 16px 16px;
 }
 
-#tete_page li a, #tete_page li a:visited {
+#tete_page li a, #tete_page li a:visited, #tete_page_prog li a, #tete_page_prog li a:visited {
     color: #F2F2EF;
     text-decoration: none;
 }
@@ -255,6 +265,18 @@ header *{
     border-bottom: 5px solid #973835;
     padding-bottom: 16px;
     margin-bottom: 16px;
+    margin-left: 70px;
+}
+
+.progra_film_jurassic {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #973835;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    margin-left: 70px;
+    padding-top: 75px;
 }
 
 .progra_film_fin {
@@ -263,6 +285,7 @@ header *{
     align-items: center;
     padding-bottom: 16px;
     margin-bottom: 16px;
+    margin-left: 70px;
 }
 
 .progra_affiche, .progra_affiche img{
