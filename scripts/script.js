@@ -15,15 +15,14 @@ $( document ).ready(function() {
         "bottom": "",
         "transform": "translate(0, -50%)"
     });
-    event_decal_base = -1000;
-    event_decal = event_decal_base;
-    setEventDecal(event_decal);
+    eventDecalBase = -1000;
+    setEventDecal(eventDecalBase);
     reachedEvents = "no";
-    event_scroll_mark = window.innerHeight;
+    eventScrollMark = window.innerHeight;
     scrollCran = 50;
     lastScrollOff = 0;
     $(window).scroll(function(){
-        if(window.pageYOffset > event_scroll_mark && reachedEvents=="no"){
+        if(window.pageYOffset > eventScrollMark && reachedEvents=="no"){
             reachedEvents = "yes";
             $("#event_roll").css("position","fixed");
         }
@@ -40,7 +39,7 @@ $( document ).ready(function() {
             reachedEvents = "yes";
             $("#event_roll").css("position","fixed");
         }
-        if(window.pageYOffset < event_scroll_mark && reachedEvents=="yes"){
+        if(window.pageYOffset < eventScrollMark && reachedEvents=="yes"){
             reachedEvents = "no";
             $("#event_roll").css({
                 "position": "absolute",
@@ -50,19 +49,19 @@ $( document ).ready(function() {
             });
         }
         if(reachedEvents=="yes"){
-            if(window.pageYOffset > lastScrollOff){
-                event_decal = event_decal + scrollCran;
+            if(window.pageYOffset > lastScrollOff && eventDecal < eventDecalBase * -1){
+                setEventDecal(eventDecal + scrollCran);
             }
-            if(window.pageYOffset < lastScrollOff){
-                event_decal = event_decal - scrollCran;
+            if(window.pageYOffset < lastScrollOff && eventDecal > eventDecalBase){
+                setEventDecal(eventDecal - scrollCran);
             }
-            setEventDecal(event_decal);
         }
         lastScrollOff = window.pageYOffset;
     });    
 });
 
 function setEventDecal(decal){
-    $("#event_top").css("left", decal+"px");
-    $("#event_bottom").css("right", decal+"px");
+    eventDecal = decal;
+    $("#event_top").css("left", eventDecal+"px");
+    $("#event_bottom").css("right", eventDecal+"px");
 }
