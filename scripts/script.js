@@ -98,6 +98,7 @@ $( document ).ready(function() {
         if(window.pageYOffset > eventScrollMark && reachedEvents=="no"){
             reachedEvents = "yes";
             $("#event_roll").css("position","fixed");
+            $(".scroll_nav p, .souris").css("display", "none");
         }
         if(window.pageYOffset > $("#evenements").outerHeight() && reachedEvents=="yes"){
             reachedEvents = "crossed";
