@@ -24,11 +24,10 @@ $( document ).ready(function() {
     scrollCran = 50;
     lastScrollOff = 0;
     $(window).scroll(function(){
-        console.log(window.pageYOffset);
-        if(window.pageYOffset > 900 && window.pageYOffset < 3800){
+        if( superpose( document.getElementById("tete_page"), document.getElementById("evenements") ) || superpose( document.getElementById("tete_page"), document.getElementById("cercles") ) ){
             if(!blackSetNav){
                 $("style").text(`
-                    tete_page li a, #tete_page li a:visited, #tete_page_prog li a, #tete_page_prog li a:visited {
+                    #tete_page li a, #tete_page li a:visited, #tete_page_prog li a, #tete_page_prog li a:visited {
                         color: #292929;
                     }
                     .anim:after {
@@ -43,7 +42,7 @@ $( document ).ready(function() {
                 blackSetNav = false;
             }
         }
-        if(window.pageYOffset > 3800){
+        if( superpose( document.getElementsByClassName("cinelogo")[0], document.getElementById("affiches") ) ){
             if(blackSetLogo){
                 $(".cinelogo").attr("src","images/cinélogo_blanc.png")
                 blackSetLogo = false;
@@ -97,6 +96,12 @@ function setEventDecal(decal){
     $("#event_top").css("left", eventDecal+"px");
     $("#event_bottom").css("right", eventDecal+"px");
 }
+
+function superpose(el1, el2) {
+    rect1 = el1.getBoundingClientRect();
+    rect2 = el2.getBoundingClientRect();
+    return rect2.top <= rect1.top && rect2.bottom >= rect1.bottom;
+};
 
 /*var figure = $(".video").hover( hoverVideo, hideVideo );
 
