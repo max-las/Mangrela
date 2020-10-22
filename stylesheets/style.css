@@ -9,8 +9,10 @@ body {
 #evenements {
     font-family: 'Montserrat', sans-serif;
     background-color: #F2F2EF;
+    height: 300vh;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    position: relative;
 }
 
 .vignette img{
