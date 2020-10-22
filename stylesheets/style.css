@@ -94,6 +94,7 @@ body {
 
 footer {
     background-color: #973835;
+    padding-top: 20px;
 }
 
 footer ul{
@@ -167,10 +168,35 @@ header *{
     text-decoration: none;
 }
 
-#bas_page li a:hover{
+/*#bas_page li a:hover{
     border-left: 2px solid #F2F2EF;
     padding-left: 3px;
+}*/
+
+/* DEBUT ANIMATION SURLIGNEMENT FOOTER*/
+
+.submenu{
+    position: relative;
 }
+
+.anim_footer:after{
+    content: '';
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0px;
+    background: #F2F2EF;
+    transition: width 500ms ease;
+    transition: height 500ms ease;
+}
+
+.anim_footer:hover:after{
+    width: 2px;
+    height: 100%;
+}
+
+/* FIN ANIMATION SURLIGNEMENT FOOTER*/
 
 #mentions, #mentions:visited {
     color: #F2F2EF;
