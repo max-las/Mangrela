@@ -383,6 +383,10 @@ header *{
     font-size: 18px;
 }
 
+#aside_text, #aside_subtext{
+    width: 600px;
+}
+
 .container-affiche{
     width: 50vw;
     display:flex;
