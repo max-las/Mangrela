@@ -403,15 +403,32 @@ header *{
 }
 
 .container-image{
-    height: 440px;
+    height: 488px;
     width: 360px;
     display: block;
+    position: relative;
+    overflow: hidden;
 }
 
-.container-image img {
+.container-image img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+}
+
+.container-image video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.33s
+}
+
+.container-image:hover video {
+    opacity: 1;
 }
 
 #affiche_line {
@@ -422,6 +439,8 @@ header *{
     transform: rotate(90deg);
     position: relative;
     bottom: 800px;
+    
+    display: none;
 }
 
 .vertical_line{
