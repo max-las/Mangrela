@@ -309,7 +309,7 @@ header *{
 }
 
 .progra_texte {
-    max-width: 30vw;
+    max-width: 50vw;
     margin: 0px 32px 0px 32px;
 }
 
@@ -323,7 +323,11 @@ header *{
 }
 
 #programmation p {
-    font-size: 12px;
+    font-size: 15px;
+}
+
+#programmation h2 {
+    font-size: 26px;
 }
 
 .progra_horaires {
@@ -360,6 +364,12 @@ header *{
 #presentation {
     display: flex;
     align-items: center;
+}
+
+#presentation aside {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
 }
 
 #presentation aside h1{
@@ -424,3 +434,4 @@ header *{
     margin: 0px 32px 0px 32px;
     font-size: 25px;
 }
+
