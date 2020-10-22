@@ -367,6 +367,12 @@ header *{
     align-items: center;
 }
 
+#presentation aside {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
 #presentation aside h1{
     font-size: 36px;
     text-align: center;
