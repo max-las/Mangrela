@@ -215,6 +215,18 @@ header *{
     border-bottom: 5px solid #973835;
     padding-bottom: 16px;
     margin-bottom: 16px;
+    margin-left: 70px;
+}
+
+.progra_film_jurassic {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #973835;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    margin-left: 70px;
+    padding-top: 100px;
 }
 
 .progra_film_fin {
@@ -223,6 +235,7 @@ header *{
     align-items: center;
     padding-bottom: 16px;
     margin-bottom: 16px;
+    margin-left: 70px;
 }
 
 .progra_affiche, .progra_affiche img{
