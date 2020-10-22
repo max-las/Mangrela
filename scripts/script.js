@@ -10,7 +10,7 @@ $( document ).ready(function() {
         $(e.target).attr("src", "images/slides/puce_pleine_blanche.png");
         switch($(e.target).attr("id")){
             case "puce_1":
-                $("#img_cine").attr("src", "images/cinema.jpg");
+                $("#slideshow").css("left", "0vw");
                 $(".titre h1").text("CINÉMA LE FESTIVAL");
                 $(".titre p").text("un cinéma pour tous")
                 $("#aside_text").html(`Le seul cinéma dont la programmation est<br/>
@@ -20,7 +20,7 @@ $( document ).ready(function() {
                 puce = "1";
             break;
             case "puce_2":
-                $("#img_cine").attr("src", "images/coupdecoeur.jpg");
+                $("#slideshow").css("left", "-40vw");
                 $(".titre h1").text("NOTRE COUP DE COEUR");
                 $(".titre p").text("du 4 au 15 novembre")
                 $("#aside_text").html(`Venez découvrir notre coup de coeur du moment: Mon Voisin Totoro.<br />
@@ -29,7 +29,7 @@ $( document ).ready(function() {
                 puce = "2";
             break;
             case "puce_3":
-                $("#img_cine").attr("src", "images/news.jpg");
+                $("#slideshow").css("left", "-80vw");
                 $(".titre h1").html("UNE RÉDUCTION<br/>HALLOWEENESQUE");
                 $(".titre p").html("du 17 octobre au 2 novembre<br/>À partir de 16h")
                 $("#aside_text").html(`Pour des vacances frissonantes venez profiter de notre offre spéciale:<br/>
