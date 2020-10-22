@@ -73,11 +73,11 @@ body {
 
 #texte_cercle {
     color: #973835;
-    transition: 0.4s ease;
+    transition: 0.6s ease;
 }
 
 .cercle {
-    transition: 0.4s ease;
+    transition: 0.6s ease;
     width: 250px;
     height: 250px;
     border: 4px solid #973835;
