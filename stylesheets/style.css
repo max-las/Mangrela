@@ -233,9 +233,9 @@ header *{
     text-decoration: none;
 }
 
-#img_cine {
-    height: 100%;
-    width: 100%;
+.img_cine {
+    height: 100vh;
+    width: 40vw;
 }
 
 #slides_elements_flex {
@@ -257,7 +257,21 @@ header *{
 #slides {
     margin-right: 64px;
     height: 100vh;
-    width: 83vh;
+    width: 40vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#slideshow {
+    width: 249vh;
+    white-space: nowrap;
+    position: relative;
+    left: 0vw;
+    transition: left 2s;
+}
+
+#slideshow img {
+    display: inline-block;
 }
 
 #fleche_droite{
