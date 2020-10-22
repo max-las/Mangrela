@@ -261,11 +261,12 @@ header *{
 
 .vertical_line_bas {
     border-top: 5px solid #F2F2EF;
-    width: 500px;
+    width: 300px;
     display: inline-block;
-    /*transform: rotate(90deg);
+    transform: rotate(90deg);
     position: relative;
-    top: -100px;*/
+    top: -200px;
+    margin-left: 250px;
 }
 
 .progra_texte {
