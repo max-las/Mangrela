@@ -36,13 +36,27 @@ body {
 }
 
 #event_middle {
-    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#event_top, #event_bottom {
+    position: relative;
+}
+
+#event_top{
+    left: 0px;
+    transition: left 1s;
+}
+
+#event_bottom{
+    right: 0px;
+    transition: right 1s;
 }
 
 .horizontal_line {
     border-top: 5px solid #973835;
-    width: 500px;
-    display: inline-block;
+    flex-grow: 1;
 }
 
 #mot_evenement {
