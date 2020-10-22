@@ -324,6 +324,10 @@ header *{
     font-size: 15px;
 }
 
+#programmation h2 {
+    font-size: 28px;
+}
+
 .progra_horaires {
     margin-left: 32px;
 }
@@ -422,3 +426,4 @@ header *{
     margin: 0px 32px 0px 32px;
     font-size: 25px;
 }
+
