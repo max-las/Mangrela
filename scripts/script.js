@@ -117,7 +117,7 @@ function superpose(el1, el2) {
     rect1 = el1.getBoundingClientRect();
     rect2 = el2.getBoundingClientRect();
     return rect2.top <= rect1.top && rect2.bottom >= rect1.bottom;
-};
+}
 
 /*var figure = $(".video").hover( hoverVideo, hideVideo );
 
@@ -128,4 +128,3 @@ function hoverVideo(e) {
 function hideVideo(e) {
     $('video', this).get(0).pause(); 
 }*/
-}
