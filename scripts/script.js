@@ -113,3 +113,13 @@ function setEventDecal(decal){
     $("#event_top").css("left", eventDecal+"px");
     $("#event_bottom").css("right", eventDecal+"px");
 }
+
+/*var figure = $(".video").hover( hoverVideo, hideVideo );
+
+function hoverVideo(e) {  
+    $('video', this).get(0).play(); 
+}
+
+function hideVideo(e) {
+    $('video', this).get(0).pause(); 
+}*/
