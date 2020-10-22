@@ -148,11 +148,11 @@ header *{
     transition: width 500ms ease;
 }
 
-/* FIN ANIMATION SURLIGNEMENT */
-
 .menu a:hover:after{
     width: 10%;
 }
+
+/* FIN ANIMATION SURLIGNEMENT */
 
 #bas_page li {
     list-style-type: none;
