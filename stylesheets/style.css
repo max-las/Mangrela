@@ -464,6 +464,7 @@ header *{
 .cercle .fa-plus {
     color: #973835;
     transition: 0.6s ease;
+    
 }
 
 .cercle:hover .fa-plus {
