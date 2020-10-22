@@ -417,8 +417,7 @@ header *{
 .vertical_line{
     border-top: 5px solid #F2F2EF;
     flex-grow: 1;
-    transform: rotate(90deg);
-    
+    transform: rotate(90deg); 
 }
 
 .mot_affiche {
@@ -426,6 +425,7 @@ header *{
     margin: 0px 32px 0px 32px;
     font-size: 25px;
     transform: rotate(90deg);
+    
 }
 
 .cercle:hover {
@@ -439,6 +439,7 @@ header *{
 .cercle .fa-plus {
     color: #973835;
     transition: 0.6s ease;
+    
 }
 
 .cercle:hover .fa-plus {
