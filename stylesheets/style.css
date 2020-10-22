@@ -520,3 +520,9 @@ p.espace{
     margin-bottom: 10px;
     font-weight: bold;
 }
+
+.cercle div p {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 16px;
+}
