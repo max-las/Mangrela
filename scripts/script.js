@@ -6,6 +6,20 @@ $( document ).ready(function() {
         e.preventDefault();
         $(".puce_clic img").attr("src", "images/slides/puce_blanche.png");
         $(e.target).attr("src", "images/slides/puce_pleine_blanche.png");
+        switch($(e.target).attr("id")){
+            case "puce_1":
+                $("#img_cine").attr("src", "images/cinema.jpg");
+            break;
+            case "puce_2":
+                $("#img_cine").attr("src", "images/coupdecoeur.jpg");
+            break;
+            case "puce_3":
+                $("#img_cine").attr("src", "images/news.jpg");
+            break;
+            default:
+                $("#img_cine").attr("src", "images/cinema.jpg");
+            break;
+        }
     });
 
 
@@ -88,7 +102,9 @@ $( document ).ready(function() {
             }
         }
         lastScrollOff = window.pageYOffset;
-    });    
+    });
+    
+    
 });
 
 function setEventDecal(decal){
@@ -112,3 +128,4 @@ function hoverVideo(e) {
 function hideVideo(e) {
     $('video', this).get(0).pause(); 
 }*/
+}
