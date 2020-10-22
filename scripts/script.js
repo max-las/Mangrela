@@ -11,28 +11,34 @@ $( document ).ready(function() {
                 $("#img_cine").attr("src", "images/cinema.jpg");
                 $(".titre h1").text("CINÉMA LE FESTIVAL");
                 $(".titre p").text("un cinéma pour tous")
-                $("#aside_text").html("Le seul cinéma dont la programmation est<br/>exclusivement consacrée au cinéma d'animation ainsi<br/>qu'aux films à effets spéciaux.");
+                $("#aside_text").html(`Le seul cinéma dont la programmation est<br/>
+                exclusivement consacrée au cinéma d'animation ainsi<br/>
+                qu'aux films à effets spéciaux.`);
                 $("#aside_subtext").text("Séances à partir de 5€.");
             break;
             case "puce_2":
                 $("#img_cine").attr("src", "images/coupdecoeur.jpg");
                 $(".titre h1").text("NOTRE COUP DE COEUR");
                 $(".titre p").text("du 4 au 15 novembre")
-                $("#aside_text").html("Venez découvrir notre coup de coeur du moment: Mon Voisin Totoro.<br /> Un classique de Hayao Miyazaki pour toute la famille.");
+                $("#aside_text").html(`Venez découvrir notre coup de coeur du moment: Mon Voisin Totoro.<br />
+                Un classique de Hayao Miyazaki pour toute la famille.`);
                 $("#aside_subtext").text("");
             break;
             case "puce_3":
                 $("#img_cine").attr("src", "images/news.jpg");
                 $(".titre h1").html("UNE RÉDUCTION<br/>HALLOWEENESQUE");
                 $(".titre p").html("du 17 octobre au 2 novembre<br/>À partir de 16h")
-                $("#aside_text").html("Pour des vacances frissonantes venez profiter de notre offre spéciale: à partir de 16h toutes nos séances sont à 4€ !");
+                $("#aside_text").html(`Pour des vacances frissonantes venez profiter de notre offre spéciale:<br/>
+                à partir de 16h toutes nos séances sont à 4€ !`);
                 $("#aside_subtext").text("");
             break;
             default:
                 $("#img_cine").attr("src", "images/cinema.jpg");
                 $(".titre h1").text("CINÉMA LE FESTIVAL");
                 $(".titre p").text("un cinéma pour tous")
-                $("#aside_text").html("Le seul cinéma dont la programmation est<br/>exclusivement consacrée au cinéma d'animation ainsi<br/>qu'aux films à effets spéciaux.");
+                $("#aside_text").html(`Le seul cinéma dont la programmation est<br/>
+                exclusivement consacrée au cinéma d'animation ainsi<br/>
+                qu'aux films à effets spéciaux.`);
                 $("#aside_subtext").text("Séances à partir de 5€.");
             break;
         }
