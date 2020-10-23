@@ -627,6 +627,9 @@ p.espace{
 
 #souris {
     width: 45px;
+    position: relative;
+    transition: bottom 0.2s;
+    bottom: 0px;
 }
 
 .cercle div p {

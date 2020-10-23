@@ -19,6 +19,7 @@ $( document ).ready(function() {
         $("#aside_subtext").css("right","0vw");
     }, 1000);
 
+    setInterval(sourisAnim, 1000);
 
 
     //Changement d'aspect des puces de slides au clic
@@ -141,7 +142,7 @@ $( document ).ready(function() {
         if(window.pageYOffset > eventScrollMark && reachedEvents=="no"){
             reachedEvents = "yes";
             $("#event_roll").css("position","fixed");
-            $(".scroll_nav p, .souris").css("display", "none");
+            $(".scroll_nav").hide();
         }
         if(window.pageYOffset > $("#evenements").outerHeight() && reachedEvents=="yes"){
             reachedEvents = "crossed";
@@ -158,6 +159,7 @@ $( document ).ready(function() {
         }
         if(window.pageYOffset < eventScrollMark && reachedEvents=="yes"){
             reachedEvents = "no";
+            $(".scroll_nav").show();
             $("#event_roll").css({
                 "position": "absolute",
                 "top": "50vh",
@@ -251,6 +253,14 @@ function slideUpdate(puce){
                 puce = "1";
             });
         break;
+    }
+}
+
+function sourisAnim(){
+    if($("#souris").css("bottom")=="20px"){
+        $("#souris").css("bottom", "0px");
+    }else{
+        $("#souris").css("bottom", "20px");
     }
 }
 
