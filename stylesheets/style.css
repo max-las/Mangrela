@@ -310,6 +310,13 @@ header *{
     margin-left: 70px;
 }
 
+.progra_titre_progra{
+    max-height: 100vw;
+    margin: 0px 100px 10px 100px;
+}
+
+
+
 .progra_affiche, .progra_affiche img{
     height: 100%;
 }
