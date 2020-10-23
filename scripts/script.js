@@ -265,7 +265,7 @@ function sourisAnim(){
 function slideVBarAnim(){
     $("#slidesVBar").animate({
         height: '100%'
-    }, 5000, function(){
+    }, 7000, function(){
         $("#slidesVBar").css("height","0%");
         $("#fleche_droite").click();
         slideVBarAnim();
