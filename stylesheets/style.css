@@ -660,6 +660,14 @@ p.espace{
     height: 100vh;
 }
 
+#mangrela_text{
+    position: relative;
+    bottom: 70vh;
+    left: 20vw;
+    color: #292929;
+    text-shadow: 0px 0px 5px #F2F2EF;
+}
+
 .centered_body{
     display: flex;
     flex-direction: column;
