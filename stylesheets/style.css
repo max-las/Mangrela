@@ -259,6 +259,9 @@ header *{
     width: 40vw;
     overflow-x: hidden;
     overflow-y: hidden;
+    position: relative;
+    left: -40vw;
+    transition: left 2s;
 }
 
 #slideshow {
@@ -377,13 +380,20 @@ header *{
 #presentation aside {
     display: flex;
     flex-direction: column;
-    margin-left: 150px;
+    margin-left: 100px;
+    width: 40vw;
 }
 
 #presentation aside h1{
     font-size: 36px;
     text-align: center;
     margin-bottom: 0;
+}
+
+.aside_line, .titre, #aside_subtext {
+    position: relative;
+    right: -50vw;
+    transition: right 1s;
 }
 
 .titre{
@@ -617,6 +627,9 @@ p.espace{
 
 #souris {
     width: 45px;
+    position: relative;
+    transition: bottom 0.2s;
+    bottom: 0px;
 }
 
 .cercle div p {

@@ -1,13 +1,39 @@
 $( document ).ready(function() {
     //Quand le document est chargé / prêt à être manipulé
 
-    var puce = "1";
+    $("#slides").css("left","0vw");
+
+    setTimeout(function(){
+        $(".titre").css("right","0vw");
+    }, 0);
+    setTimeout(function(){
+        $(".aside_line.1").css("right","0vw");
+    }, 250);
+    setTimeout(function(){
+        $(".aside_line.2").css("right","0vw");
+    }, 500);
+    setTimeout(function(){
+        $(".aside_line.3").css("right","0vw");
+    }, 750);
+    setTimeout(function(){
+        $("#aside_subtext").css("right","0vw");
+    }, 1000);
+
+    setInterval(sourisAnim, 1000);
+
 
     //Changement d'aspect des puces de slides au clic
+    puce = "1";
     $(".puce_clic").click(function(e){
         e.preventDefault();
-        $(".puce_clic img").attr("src", "images/slides/puce_blanche.png");
-        $(e.target).attr("src", "images/slides/puce_pleine_blanche.png");
+        $(".puce_clic img").attr({
+            "src": "images/slides/puce_blanche.png",
+            "alt": "Puce de navigation diaporama vide"
+        });
+        $(e.target).attr({
+            "src": "images/slides/puce_pleine_blanche.png",
+            "alt": "Puce de navigation diaporama remplie"
+        });
         slideUpdate($(e.target).attr("id").slice(-1));
     });
 
@@ -24,8 +50,14 @@ $( document ).ready(function() {
                 puce = "2";
             break;
         }
-        $(".puce_clic img").attr("src", "images/slides/puce_blanche.png");
-        $("#puce_" + puce).attr("src", "images/slides/puce_pleine_blanche.png");
+        $(".puce_clic img").attr({
+            "src": "images/slides/puce_blanche.png",
+            "alt": "Puce de navigation diaporama vide"
+        });
+        $("#puce_" + puce).attr({
+            "src": "images/slides/puce_pleine_blanche.png",
+            "alt": "Puce de navigation diaporama remplie"
+        });
         slideUpdate(puce);
     });
 
@@ -42,8 +74,14 @@ $( document ).ready(function() {
                 puce = "1";
             break;
         }
-        $(".puce_clic img").attr("src", "images/slides/puce_blanche.png");
-        $("#puce_" + puce).attr("src", "images/slides/puce_pleine_blanche.png");
+        $(".puce_clic img").attr({
+            "src": "images/slides/puce_blanche.png",
+            "alt": "Puce de navigation diaporama vide"
+        });
+        $("#puce_" + puce).attr({
+            "src": "images/slides/puce_pleine_blanche.png",
+            "alt": "Puce de navigation diaporama remplie"
+        });
         slideUpdate(puce);
     });
 
@@ -86,19 +124,25 @@ $( document ).ready(function() {
         }
         if( superpose( document.getElementsByClassName("cinelogo")[0], document.getElementById("affiches") ) ){
             if(blackSetLogo){
-                $(".cinelogo").attr("src","images/cinélogo_blanc.png")
+                $(".cinelogo").attr({
+                    "src": "images/cinélogo_blanc.png",
+                    "alt": "Logo blanc cinéma"
+                })
                 blackSetLogo = false;
             }
         }else{
             if(!blackSetLogo){
-                $(".cinelogo").attr("src","images/cinélogo_noir.png")
+                $(".cinelogo").attr({
+                    "src": "images/cinélogo_noir.png",
+                    "alt": "Logo noir cinéma"
+                })
                 blackSetLogo = true;
             }
         }
         if(window.pageYOffset > eventScrollMark && reachedEvents=="no"){
             reachedEvents = "yes";
             $("#event_roll").css("position","fixed");
-            $(".scroll_nav p, .souris").css("display", "none");
+            $(".scroll_nav").hide();
         }
         if(window.pageYOffset > $("#evenements").outerHeight() && reachedEvents=="yes"){
             reachedEvents = "crossed";
@@ -115,6 +159,7 @@ $( document ).ready(function() {
         }
         if(window.pageYOffset < eventScrollMark && reachedEvents=="yes"){
             reachedEvents = "no";
+            $(".scroll_nav").show();
             $("#event_roll").css({
                 "position": "absolute",
                 "top": "50vh",
@@ -158,42 +203,64 @@ function slideUpdate(puce){
     switch(puce){
         case "1":
             $("#slideshow").css("left", "0vw");
-            $(".titre h1").text("CINÉMA LE FESTIVAL");
-            $(".titre p").text("un cinéma pour tous")
-            $("#aside_text").html(`Le seul cinéma dont la programmation est<br/>
-            exclusivement consacrée au cinéma d'animation ainsi<br/>
-            qu'aux films à effets spéciaux.`);
-            $("#aside_subtext").text("Séances à partir de 5€.");
-            puce = "1";
+            $(".titre, #aside_text, #aside_subtext").fadeOut(function(){
+                $(".titre h1").text("CINÉMA LE FESTIVAL");
+                $(".titre p").text("un cinéma pour tous")
+                $("#aside_text").html(`Le seul cinéma dont la programmation est<br/>
+                exclusivement consacrée au cinéma d'animation ainsi<br/>
+                qu'aux films à effets spéciaux.`);
+                $("#aside_subtext").text("Séances à partir de 5€.");
+                $(".titre, #aside_text, #aside_subtext").fadeIn();
+                puce = "1";
+            });
         break;
         case "2":
             $("#slideshow").css("left", "-40vw");
-            $(".titre h1").text("NOTRE COUP DE COEUR");
-            $(".titre p").text("du 4 au 15 novembre")
-            $("#aside_text").html(`Venez découvrir notre coup de coeur du moment: Mon Voisin Totoro.<br />
-            Un classique de Hayao Miyazaki pour toute la famille.`);
-            $("#aside_subtext").text("");
-            puce = "2";
+            $(".titre, #aside_text, #aside_subtext").fadeOut(function(){
+                $(".titre h1").text("NOTRE COUP DE COEUR");
+                $(".titre p").text("du 4 au 15 novembre")
+                $("#aside_text").html(`Venez découvrir notre coup de coeur du moment: Mon Voisin Totoro.<br />
+                Un classique de Hayao Miyazaki pour toute la famille.`);
+                $("#aside_subtext").text("");
+                $(".titre, #aside_text, #aside_subtext").fadeIn();
+                puce = "2";
+
+            });
         break;
         case "3":
             $("#slideshow").css("left", "-80vw");
-            $(".titre h1").html("UNE RÉDUCTION<br/>HALLOWEENESQUE");
-            $(".titre p").html("du 17 octobre au 2 novembre<br/>À partir de 16h")
-            $("#aside_text").html(`Pour des vacances frissonantes venez profiter de notre offre spéciale:<br/>
-            à partir de 16h toutes nos séances sont à 4€ !`);
-            $("#aside_subtext").text("");
-            puce = "3";
+            $(".titre, #aside_text, #aside_subtext").fadeOut(function(){
+                $(".titre h1").html("UNE RÉDUCTION<br/>HALLOWEENESQUE");
+                $(".titre p").html("du 17 octobre au 2 novembre<br/>À partir de 16h")
+                $("#aside_text").html(`Pour des vacances frissonantes venez profiter de notre offre spéciale:<br/>
+                à partir de 16h toutes nos séances sont à 4€ !`);
+                $("#aside_subtext").text("");
+                $(".titre, #aside_text, #aside_subtext").fadeIn();
+                puce = "3";
+                
+            });
         break;
         default:
             $("#slideshow").css("left", "0vw");
-            $(".titre h1").text("CINÉMA LE FESTIVAL");
-            $(".titre p").text("un cinéma pour tous")
-            $("#aside_text").html(`Le seul cinéma dont la programmation est<br/>
-            exclusivement consacrée au cinéma d'animation ainsi<br/>
-            qu'aux films à effets spéciaux.`);
-            $("#aside_subtext").text("Séances à partir de 5€.");
-            puce = "1";
+            $(".titre, #aside_text, #aside_subtext").fadeOut(function(){
+                $(".titre h1").text("CINÉMA LE FESTIVAL");
+                $(".titre p").text("un cinéma pour tous")
+                $("#aside_text").html(`Le seul cinéma dont la programmation est<br/>
+                exclusivement consacrée au cinéma d'animation ainsi<br/>
+                qu'aux films à effets spéciaux.`);
+                $("#aside_subtext").text("Séances à partir de 5€.");
+                $(".titre, #aside_text, #aside_subtext").fadeIn();
+                puce = "1";
+            });
         break;
+    }
+}
+
+function sourisAnim(){
+    if($("#souris").css("bottom")=="20px"){
+        $("#souris").css("bottom", "0px");
+    }else{
+        $("#souris").css("bottom", "20px");
     }
 }
 
