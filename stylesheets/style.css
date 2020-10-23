@@ -1,14 +1,11 @@
-html,body
-{
-    /* overflow-x: hidden; */
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #292929;
     color: #F2F2EF;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    overflow-x: hidden;
+    width: 100vw;
 }
 
 #evenements {
@@ -18,6 +15,7 @@ body {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     position: relative;
+    overflow-x: hidden;
 }
 
 .vignette img{
