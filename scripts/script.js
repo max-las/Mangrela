@@ -25,8 +25,14 @@ $( document ).ready(function() {
     puce = "1";
     $(".puce_clic").click(function(e){
         e.preventDefault();
-        $(".puce_clic img").attr("src", "images/slides/puce_blanche.png");
-        $(e.target).attr("src", "images/slides/puce_pleine_blanche.png");
+        $(".puce_clic img").attr({
+            "src": "images/slides/puce_blanche.png",
+            "alt": "Puce de navigation diaporama vide"
+        });
+        $(e.target).attr({
+            "src": "images/slides/puce_pleine_blanche.png",
+            "alt": "Puce de navigation diaporama remplie"
+        });
         slideUpdate($(e.target).attr("id").slice(-1));
     });
 
@@ -43,8 +49,14 @@ $( document ).ready(function() {
                 puce = "2";
             break;
         }
-        $(".puce_clic img").attr("src", "images/slides/puce_blanche.png");
-        $("#puce_" + puce).attr("src", "images/slides/puce_pleine_blanche.png");
+        $(".puce_clic img").attr({
+            "src": "images/slides/puce_blanche.png",
+            "alt": "Puce de navigation diaporama vide"
+        });
+        $("#puce_" + puce).attr({
+            "src": "images/slides/puce_pleine_blanche.png",
+            "alt": "Puce de navigation diaporama remplie"
+        });
         slideUpdate(puce);
     });
 
@@ -61,8 +73,14 @@ $( document ).ready(function() {
                 puce = "1";
             break;
         }
-        $(".puce_clic img").attr("src", "images/slides/puce_blanche.png");
-        $("#puce_" + puce).attr("src", "images/slides/puce_pleine_blanche.png");
+        $(".puce_clic img").attr({
+            "src": "images/slides/puce_blanche.png",
+            "alt": "Puce de navigation diaporama vide"
+        });
+        $("#puce_" + puce).attr({
+            "src": "images/slides/puce_pleine_blanche.png",
+            "alt": "Puce de navigation diaporama remplie"
+        });
         slideUpdate(puce);
     });
 
@@ -105,12 +123,18 @@ $( document ).ready(function() {
         }
         if( superpose( document.getElementsByClassName("cinelogo")[0], document.getElementById("affiches") ) ){
             if(blackSetLogo){
-                $(".cinelogo").attr("src","images/cinélogo_blanc.png")
+                $(".cinelogo").attr({
+                    "src": "images/cinélogo_blanc.png",
+                    "alt": "Logo blanc cinéma"
+                })
                 blackSetLogo = false;
             }
         }else{
             if(!blackSetLogo){
-                $(".cinelogo").attr("src","images/cinélogo_noir.png")
+                $(".cinelogo").attr({
+                    "src": "images/cinélogo_noir.png",
+                    "alt": "Logo noir cinéma"
+                })
                 blackSetLogo = true;
             }
         }
