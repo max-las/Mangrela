@@ -262,6 +262,16 @@ header *{
     position: relative;
     left: -40vw;
     transition: left 2s;
+    position: relative;
+}
+
+#slidesVBar {
+    background: #973835;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 0%;
+    width: 5px;
 }
 
 #slideshow {
