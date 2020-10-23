@@ -4,6 +4,8 @@ body {
     color: #F2F2EF;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    overflow-x: hidden;
+    width: 100vw;
 }
 
 #evenements {
@@ -13,6 +15,7 @@ body {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     position: relative;
+    overflow-x: hidden;
 }
 
 .vignette img{
@@ -634,4 +637,16 @@ p.espace{
 #mangrela_img{
     width: 100vw;
     height: 100vh;
+}
+
+.centered_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centered_text{
+    width: 50vw;
+    overflow: hidden;
+    text-overflow: initial;
 }
