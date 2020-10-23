@@ -21,7 +21,7 @@ $( document ).ready(function() {
 
     setInterval(sourisAnim, 1000);
 
-
+    slideVBarAnim();
 
 
     //Changement d'aspect des puces de slides au clic
@@ -86,15 +86,6 @@ $( document ).ready(function() {
         });
         slideUpdate(puce);
     });
-
-    setInterval(function(){
-        $("#slidesVBar").animate({
-            height: '100%'
-        }, 5000, function(){
-            $("#slidesVBar").css("height","0%");
-            $("#fleche_droite").click();
-        });
-    }, 5000);
 
     blackSetNav = false;
     blackSetLogo = true;
@@ -269,6 +260,16 @@ function sourisAnim(){
     }else{
         $("#souris").css("bottom", "20px");
     }
+}
+
+function slideVBarAnim(){
+    $("#slidesVBar").animate({
+        height: '100%'
+    }, 5000, function(){
+        $("#slidesVBar").css("height","0%");
+        $("#fleche_droite").click();
+        slideVBarAnim();
+    });
 }
 
 /*var figure = $(".video").hover( hoverVideo, hideVideo );
