@@ -380,7 +380,8 @@ header *{
 #presentation aside {
     display: flex;
     flex-direction: column;
-    margin-left: 150px;
+    margin-left: 100px;
+    width: 40vw;
 }
 
 #presentation aside h1{
