@@ -262,6 +262,16 @@ header *{
     position: relative;
     left: -40vw;
     transition: left 2s;
+    position: relative;
+}
+
+#slidesVBar {
+    background: #973835;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 0%;
+    width: 5px;
 }
 
 #slideshow {
@@ -309,6 +319,13 @@ header *{
     margin-bottom: 16px;
     margin-left: 70px;
 }
+
+.progra_titre_progra{
+    max-height: 100vw;
+    margin: 0px 100px 10px 100px;
+}
+
+
 
 .progra_affiche, .progra_affiche img{
     height: 100%;

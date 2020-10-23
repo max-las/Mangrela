@@ -21,6 +21,12 @@ $( document ).ready(function() {
 
     setInterval(sourisAnim, 1000);
 
+    $("#slidesVBar").animate({
+        height: '100%'
+    }, 5000, function(){
+        $("#slidesVBar").css("height","0%");
+    });
+
 
     //Changement d'aspect des puces de slides au clic
     puce = "1";
@@ -254,6 +260,11 @@ function slideUpdate(puce){
             });
         break;
     }
+    $("#slidesVBar").animate({
+        height: '100%'
+    }, 5000, function(){
+        $("#slidesVBar").css("height","0%");
+    });
 }
 
 function sourisAnim(){
