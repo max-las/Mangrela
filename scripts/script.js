@@ -21,11 +21,7 @@ $( document ).ready(function() {
 
     setInterval(sourisAnim, 1000);
 
-    $("#slidesVBar").animate({
-        height: '100%'
-    }, 5000, function(){
-        $("#slidesVBar").css("height","0%");
-    });
+
 
 
     //Changement d'aspect des puces de slides au clic
@@ -92,7 +88,12 @@ $( document ).ready(function() {
     });
 
     setInterval(function(){
-        $("#fleche_droite").click();
+        $("#slidesVBar").animate({
+            height: '100%'
+        }, 5000, function(){
+            $("#slidesVBar").css("height","0%");
+            $("#fleche_droite").click();
+        });
     }, 5000);
 
     blackSetNav = false;
@@ -260,11 +261,6 @@ function slideUpdate(puce){
             });
         break;
     }
-    $("#slidesVBar").animate({
-        height: '100%'
-    }, 5000, function(){
-        $("#slidesVBar").css("height","0%");
-    });
 }
 
 function sourisAnim(){
